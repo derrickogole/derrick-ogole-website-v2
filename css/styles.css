@@ -1,0 +1,518 @@
+/* Custom Properties */
+
+:root{
+  --ff-primary: "Source Sans Pro", sans-serif;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-main: #0081C9;
+  --clr-secondary: #FFF;
+
+  --clr-text: #242424d9;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-primary);
+  box-sizing: border-box;
+}
+
+/* Navigation */ 
+
+.nav {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-color: var(--clr-main);
+}
+
+.nav-item {
+  list-style: none;
+  padding: 12px;
+}
+
+.nav-item:last-child{
+  margin-right: 0;
+}
+
+.nav-link{
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--clr-secondary);
+  font-weight: var(--fw-bold);
+  display: block;
+}
+
+.nav-list{
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item:hover{
+  background-color: #00a6ff;
+  padding: 12px;
+}
+
+.toggle-button{
+  position: absolute;
+  top: 18px;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+  transition: background-color 0.75s;
+}
+
+.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: var(--clr-main);
+} 
+
+.toggle-button.active{
+  background-color: var(--clr-secondary);
+}
+ 
+/* Intro */
+
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: var(--clr-secondary);
+}
+
+.intro-section-right {
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 590px;
+}
+
+.intro-header {
+  font-size: 80px;
+}
+
+.intro-description {
+  font-size: 40px;
+}
+
+/* Services */
+
+.services-section{
+  display:flex;
+  align-items: center;
+  padding: 100px 0;
+  background-color: var(--clr-main);
+  color: var(--clr-secondary);
+}
+
+.services-left{
+  width:100%;
+}
+
+.services-right{
+  width: 100%;
+}
+
+.services-header{
+  font-size: 80px;
+  margin-left: 125px;
+}
+
+.web-design-header{
+  font-size: 80px;
+}
+
+.web-design-description{
+  font-size: 40px;
+  padding-right: 300px;
+}
+
+/* Approach */
+
+.my-approach{
+  text-align: center;
+  padding: 100px 0;
+  background-color: var(--clr-secondary);
+  color: var(--clr-text);
+}
+
+.my-approach-header{
+  font-size: 80px;
+}
+
+.my-approach-description{
+  display: inline-block;
+  text-align: left;
+  font-size: 40px;
+  max-width: 1000px;
+}
+
+/* Chat */
+
+.chat-section{
+  max-width: 500px;
+  margin: 0 auto 100px auto;
+  padding: 50px;
+  text-align: center;
+  background-color: var(--clr-main); 
+}
+
+.chat-header{
+  color: var(--clr-secondary);
+}
+
+.chat-description{
+  color: var(--clr-secondary);
+}
+
+.chat-link{
+  color: var(--clr-secondary);
+  font-weight: var(--fw-bold);
+}
+
+/* Buttons */
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+
+
+.btn{
+  display: inline-block;
+  padding: 0.5em 2.5em;
+  margin-right: 16px;
+  text-decoration: none;
+  text-align: center;
+  color: var(--clr-secondary);
+  background-color: var(--clr-main);
+  font-weight: var(--fw-bold);
+  min-width: 150px;
+  transition: transform 200ms ease-out;
+}
+
+a.btn:last-child{
+  margin-right: 0;
+}
+
+.btn:hover{
+  transform: scale(1.1);
+}
+
+/* Footer */
+
+.footer{
+  background-color: var(--clr-main);
+  text-align: center;
+  text-decoration: none;
+  padding: 2.5em 0;
+}
+
+.footer-link{
+  text-decoration: none;
+  color: var(--clr-secondary);
+  font-weight: var(--fw-bold);
+}
+
+.copyright-description p{
+  margin-bottom: 0;
+  color: var(--clr-secondary);
+  font-weight: var(--fw-bold);
+}
+
+/* Social Media*/
+
+.a-social-b{
+  background-color: var(--clr-main);
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.social-list{
+  color: var(--clr-secondary);
+  padding: 1em;
+}
+
+
+/* Media */
+
+@media screen and (max-width: 600px){
+
+  .toggle-button{
+    display: flex;
+  }
+
+  .nav{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links{
+    width: 100%;
+    display: none;
+  }
+
+  .navbar-links.active{
+    display: flex;
+  }
+
+  .nav-list{
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+
+  .nav-item{
+    text-align: center;
+    margin: 0;
+    padding: 15px 0;
+  }
+
+}
+
+@media screen and (max-width: 480px){
+
+    .intro-section{
+      display: block;
+    }
+
+    .derrick-ogole-image-style{
+      width: 100%;
+    }
+
+    .intro-section-right{
+      display: block;
+      text-align: left;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .intro-description{
+      font-size: 30px;
+    }
+
+    .services-section{
+      display: block;
+    }
+
+    .services-header{
+      margin-left: 30px;
+      margin-right: 30px;
+      text-align: center;
+    }
+
+    .web-design-header{
+      font-size: 40px;
+      text-align: center;
+    }
+
+    .web-design-description{
+      text-align: center;
+      font-size: 30px;
+      margin-left: 30px;
+      margin-right: 30px;
+      padding: 0;
+    }
+
+    .my-approach{
+      display: block;
+      width: 100%;
+    }
+
+    .my-approach-header{
+      font-size: 60px;
+      text-align: center;
+    }
+
+    .my-approach-description{
+      text-align: center;
+      font-size: 30px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .chat-section{
+      margin-bottom: 50px;
+    }
+
+    .chat-header{
+      font-size: 40px;
+    }
+
+    .chat-description{
+      font-size: 30px;
+    }
+
+    .buttons{
+      margin-bottom: 50px;
+      display: block;
+      font-size: 20px;
+    }
+
+    .buttons a{
+      display: block;
+      margin-right: 0;
+    }
+
+    .btn{
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .btn:first-child{
+      margin-bottom: 10px;
+    }
+
+    .footer{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+  }
+
+    @media screen and (min-width:481px) and (max-width: 768px){
+
+      .nav-link{
+        font-size: 25px;
+      }
+      
+      .intro-section{
+        display: flex;
+        width: 100%;
+      }
+
+      .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+
+      .derrick-ogole-image{
+        width: 100%;
+        text-align: center;
+      }
+
+      .intro-header{
+        font-size: 60px;
+        text-align: center;
+      }
+
+      .intro-description{
+        font-size: 30px;
+        max-width: 400px;
+        text-align: center;
+      }
+
+      .services-section{
+        display: block;
+        width: 100%;
+      }
+
+      .services-header{
+        text-align: center;
+        margin-left: 0;
+      }
+
+      .web-design-header{
+        text-align: center;
+        font-size: 45px;
+      }
+
+      .web-design-description{
+        text-align: center;
+        font-size: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .my-approach-description{
+        text-align: center;
+        font-size: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .my-approach-description p:last-child{
+        margin-bottom: 0;
+      }
+
+      .chat-section{
+        margin-bottom: 50px;
+      }
+
+      .chat-header{
+        font-size: 30px;
+      }
+
+      .chat-description{
+        font-size: 30px;
+      }
+
+      .buttons{
+        font-size: 20px;
+      }
+
+      .footer{
+        font-size: 20px;
+      }
+
+    }
+
+      @media screen and (min-width:769px) and (max-width: 1024px){
+        
+        .nav-link{
+          font-size: 30px;
+        }
+        
+        .web-design-description{
+          padding-right: 0;
+        }
+
+        .services-header{
+          margin-left: 65px;
+        }
+
+        .services-right{
+          padding-right: 40px;
+        }
+
+        .my-approach-description{
+          padding-left: 100px;
+          padding-right: 100px;
+        }
+
+        .chat-header{
+          font-size: 40px;
+        }
+
+        .chat-description{
+          font-size: 40px;
+        }
+
+        .buttons{
+          font-size: 30px;
+        }
+
+        .footer{
+          font-size: 30px;
+        }
+      }
