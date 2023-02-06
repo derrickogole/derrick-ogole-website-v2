@@ -167,10 +167,12 @@ body {
 
 .chat-header{
   color: var(--clr-secondary);
+  font-size: 40px;
 }
 
 .chat-description{
   color: var(--clr-secondary);
+  font-size: 30px;
 }
 
 .chat-link{
@@ -185,6 +187,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
+  font-size: 20px;
 }
 
 
@@ -514,5 +517,17 @@ a.btn:last-child{
 
         .footer{
           font-size: 30px;
+        }
+      }
+
+
+      @media screen and (min-width:1180px){
+
+        .services-header{
+          margin-right: 80px;
+        }
+
+        .web-design-description{
+          padding-right: 125px;
         }
       }
