@@ -410,6 +410,10 @@ a.btn:last-child{
         text-align: center;
       }
 
+      .intro-section{
+        display:block;
+      }
+
       .intro-header{
         font-size: 60px;
         text-align: center;
@@ -471,7 +475,16 @@ a.btn:last-child{
       }
 
       .buttons{
-        font-size: 20px;
+        display: block;
+        text-align: center;
+      }
+
+      .btn{
+        margin-right: 0;
+      }
+
+      .btn:first-child{
+        margin-bottom: 10px;
       }
 
       .footer{
@@ -521,7 +534,11 @@ a.btn:last-child{
       }
 
 
-      @media screen and (min-width:1180px){
+      @media screen and (min-width:1025px){
+
+        .nav-link{
+          font-size: 30px;
+        }
 
         .services-header{
           margin-right: 80px;
@@ -530,4 +547,13 @@ a.btn:last-child{
         .web-design-description{
           padding-right: 125px;
         }
+
+        .buttons{
+          font-size: 30px;
+        }
+
+        .footer{
+          font-size: 30px;
+        }
+ 
       }
