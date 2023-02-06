@@ -287,6 +287,13 @@ a.btn:last-child{
 
 }
 
+@media screen and (max-height:500px){
+  .nav{
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 480px){
 
     .intro-section{
