@@ -183,11 +183,14 @@ body {
 /* Buttons */
 
 .buttons {
+  margin-bottom: 100px;
+  font-size: 20px;
+}
+
+.button-layout {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
-  font-size: 20px;
 }
 
 .btn {
@@ -362,28 +365,22 @@ a.btn:last-child {
     font-size: 30px;
   }
 
-  .buttons {
-    margin-bottom: 50px;
-    display: block;
-    font-size: 20px;
-  }
-
-  .buttons a {
-    display: block;
-    margin-right: 0;
-  }
-
   .btn {
-    padding-left: 0;
-    padding-right: 0;
+    display: block;
   }
 
-  .btn:first-child {
+  .button-layout {
+    display: block;
+    text-align: center;
+  }
+
+  a.btn {
     margin-bottom: 10px;
   }
 
   a.btn:last-child {
     margin-left: 0;
+    margin-bottom: 0;
   }
 
   .footer {
@@ -393,7 +390,7 @@ a.btn:last-child {
 }
 
 @media screen and (min-width: 481px) and (max-width: 555px) {
-  .buttons {
+  .button-layout {
     display: block;
   }
 
@@ -403,27 +400,8 @@ a.btn:last-child {
     margin-bottom: 10px;
   }
 
-  .btn:first-child {
-    margin-right: 0;
-  }
-
   a.btn:last-child {
-    margin-left: 0;
-  }
-}
-
-@media screen and (min-width: 531px) and (max-width: 768px) {
-  .buttons {
-    display: block;
-    text-align: center;
-  }
-
-  .btn:first-child {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  a.btn:last-child {
+    margin-bottom: 0;
     margin-left: 0;
   }
 }
