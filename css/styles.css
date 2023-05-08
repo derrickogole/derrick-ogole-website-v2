@@ -97,10 +97,12 @@ body {
 
 .intro-header {
   font-size: 80px;
+  color: var(--clr-text);
 }
 
 .intro-description {
   font-size: 40px;
+  color: var(--clr-text);
 }
 
 /* Services */
