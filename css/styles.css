@@ -125,7 +125,6 @@ body {
 
 .services-header {
   font-size: 80px;
-  margin-left: 250px;
 }
 
 .web-design-header {
@@ -379,6 +378,7 @@ a.btn:last-child {
   }
 
   a.btn {
+    margin-right: 0;
     margin-bottom: 10px;
   }
 
@@ -522,21 +522,24 @@ a.btn:last-child {
 
 /* Laptop */
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-height: 1024px) {
   .nav-link {
     font-size: 30px;
   }
 
   .web-design-description {
+    font-size: 30px;
     padding-right: 0;
   }
 
   .services-header {
-    margin-left: 65px;
+    margin-left: 150px;
+    padding-right: 100px;
   }
 
   .services-right {
     padding-right: 40px;
+    padding-left: 40px;
   }
 
   .my-approach-description {
@@ -578,11 +581,7 @@ a.btn:last-child {
   }
 
   .services-header {
-    margin-right: 80px;
-  }
-
-  .web-design-description {
-    padding-right: 125px;
+    margin-left: 250px;
   }
 
   .buttons {
