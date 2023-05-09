@@ -164,8 +164,8 @@ body {
   margin: 0 auto 100px auto;
   padding: 50px;
   text-align: center;
-  border-radius: 4px;
   background-color: var(--clr-main);
+  border-radius: 4px;
 }
 
 .chat-header {
@@ -410,6 +410,8 @@ a.btn:last-child {
   }
 }
 
+/* Tablet */
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .nav-link {
     font-size: 25px;
@@ -500,6 +502,26 @@ a.btn:last-child {
   }
 }
 
+/* iPad Air */
+
+@media (width: 820px) and (height: 1180px) {
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Surface Pro 7 */
+
+@media (width: 912px) and (height: 1368px) {
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Laptop */
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .nav-link {
     font-size: 30px;
@@ -539,6 +561,17 @@ a.btn:last-child {
   }
 }
 
+@media screen and (max-width: 1024px) and (max-height: 850px) {
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/* Large Laptop */
+
 @media screen and (min-width: 1025px) {
   .nav-link {
     font-size: 30px;
@@ -558,14 +591,5 @@ a.btn:last-child {
 
   .footer {
     font-size: 30px;
-  }
-}
-
-@media screen and (max-width: 1024px) and (max-height: 850px) {
-  .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
   }
 }
