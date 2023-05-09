@@ -333,9 +333,7 @@ a.btn:last-child {
     display: block;
   }
 
-  .services-header {
-    margin-left: 30px;
-    margin-right: 30px;
+  .services-header-position {
     text-align: center;
   }
 
@@ -406,6 +404,21 @@ a.btn:last-child {
   }
 }
 
+/* ORIENTATION LANDSCAPE */
+
+@media (orientation: landscape) {
+  .services-section {
+    display: block;
+    text-align: center;
+  }
+
+  .web-design-description {
+    padding-left: 75px;
+  }
+}
+
+/* ORIENTATION END */
+
 @media screen and (min-width: 481px) and (max-width: 555px) {
   .button-layout {
     display: block;
@@ -466,9 +479,8 @@ a.btn:last-child {
     width: 100%;
   }
 
-  .services-header {
+  .services-header-position {
     text-align: center;
-    margin-left: 0;
   }
 
   .web-design-header {
@@ -542,17 +554,12 @@ a.btn:last-child {
 
   .web-design-description {
     font-size: 30px;
-    padding-right: 0;
+    padding-right: 75px;
   }
 
-  .services-header {
-    margin-left: 150px;
-    padding-right: 100px;
-  }
-
-  .services-right {
-    padding-right: 40px;
-    padding-left: 40px;
+  .services-header-position {
+    margin-left: 85px;
+    margin-right: 100px;
   }
 
   .my-approach-description {
@@ -593,8 +600,8 @@ a.btn:last-child {
     font-size: 30px;
   }
 
-  .services-header {
-    margin-left: 250px;
+  .services-header-position {
+    margin-left: 350px;
   }
 
   .buttons {
