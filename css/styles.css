@@ -309,6 +309,20 @@ a.btn:last-child {
   }
 }
 
+/* ORIENTATION */
+
+@media screen and (orientation: landscape) and (max-width: 850px) and (max-height: 480px) {
+  .services-section {
+    display: block;
+    text-align: center;
+  }
+  .web-design-description-position {
+    padding-left: 75px;
+  }
+}
+
+/* ORIENTATION ENDS */
+
 @media screen and (max-width: 480px) {
   .intro-section {
     display: block;
@@ -403,21 +417,6 @@ a.btn:last-child {
     padding-right: 20px;
   }
 }
-
-/* ORIENTATION LANDSCAPE */
-
-@media (orientation: landscape) {
-  .services-section {
-    display: block;
-    text-align: center;
-  }
-
-  .web-design-description {
-    padding-left: 75px;
-  }
-}
-
-/* ORIENTATION END */
 
 @media screen and (min-width: 481px) and (max-width: 555px) {
   .button-layout {
@@ -558,8 +557,7 @@ a.btn:last-child {
   }
 
   .services-header-position {
-    margin-left: 85px;
-    margin-right: 100px;
+    text-align: center;
   }
 
   .my-approach-description {
@@ -600,15 +598,15 @@ a.btn:last-child {
     font-size: 30px;
   }
 
-  .services-header-position {
-    margin-left: 350px;
-  }
-
   .buttons {
     font-size: 30px;
   }
 
   .footer {
     font-size: 30px;
+  }
+
+  .services-header-position {
+    text-align: center;
   }
 }
