@@ -254,6 +254,8 @@ a.btn:last-child {
 
 /* Media */
 
+/* Navbar Media */
+
 @media screen and (max-width: 600px) {
   .toggle-button {
     display: flex;
@@ -287,6 +289,21 @@ a.btn:last-child {
     padding: 15px 0;
   }
 }
+
+/* Mobile Phone */
+
+@media screen and (max-width: 950px) and (max-height: 430px) {
+  .services-section {
+    display: block;
+    text-align: center;
+  }
+
+  .web-design-description {
+    padding-left: 75px;
+  }
+}
+
+/* 480px */
 
 @media screen and (max-height: 480px) {
   .nav {
@@ -417,6 +434,14 @@ a.btn:last-child {
   a.btn:last-child {
     margin-bottom: 0;
     margin-left: 0;
+  }
+}
+
+/* Galaxy Fold */
+
+@media screen and (width: 653px) and (height: 280px) {
+  .web-design-description-position {
+    padding-left: 0;
   }
 }
 
@@ -598,14 +623,6 @@ a.btn:last-child {
 
   .my-approach-description {
     padding: 0 75px;
-  }
-}
-
-/* Galaxy Fold */
-
-@media screen and (width: 653px) and (height: 280px) {
-  .web-design-description-position {
-    padding-left: 0;
   }
 }
 
